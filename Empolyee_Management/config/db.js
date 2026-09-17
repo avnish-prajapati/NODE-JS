@@ -5,10 +5,10 @@ export const connectdb = async () => {
   try {
 
     await mongoose.connect( // Ye function MongoDB se connection banane ke liye ..
-      "mongodb://127.0.0.1:27017/employeeDB"
+      "mongodb://localhost:27017/employeeDB"
     );
 
-    console.log("MongoDB Connected");
+    console.log("MongoDB Connected...");
 
   } catch (error) {
 
@@ -16,6 +16,6 @@ export const connectdb = async () => {
       "Database connection error:",
       error.message
     );
-
+          
   }
 };
